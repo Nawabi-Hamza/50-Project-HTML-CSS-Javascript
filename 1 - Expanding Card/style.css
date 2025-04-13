@@ -7,4 +7,85 @@
 
 body{
     background: teal;
+    color: white;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    > hr{
+        margin: 20px 0;
+        border: none;
+        height: 1px;
+        background: white;
+    }
+}
+
+.panels{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    /* align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; */
+}
+
+.panel{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    flex: .5;
+    margin: 5px;
+    position: relative;
+    transition: flex 0.7s ease;
+    > h3{
+        opacity: 0;
+        font-size: 30px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+    > p{
+        opacity: 0;
+        position: absolute;
+        top: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        margin: auto;
+        padding: 10px;
+        margin-right: 20px;
+        border-radius: 5px;
+    }
+}
+.panel.active{
+    flex: 7;
+    > h3{
+        opacity: 1;
+        transition: opacity 0.5s ease 0.4s;
+    }
+    > p{
+        /* transition: 3s ease; */
+        transition: opacity 0.5s ease 0.4s;
+
+        opacity: 1;
+    }
+}
+
+#panel1{
+    background-image: url('https://images.pexels.com/photos/2325447/pexels-photo-2325447.jpeg?auto=compress&cs=tinysrgb&w=1200');
+}
+#panel2{
+    background-image: url('https://images.pexels.com/photos/906150/pexels-photo-906150.jpeg?auto=compress&cs=tinysrgb&w=1200');
+}
+#panel3{
+    background-image: url('https://images.pexels.com/photos/7919366/pexels-photo-7919366.jpeg?auto=compress&cs=tinysrgb&h=226.525&fit=crop&w=253.17499999999998&dpr=2');
+}
+#panel4{
+    background-image: url('https://images.pexels.com/videos/4746616/birds-birds-life-costa-rica-costa-rican-birds-4746616.jpeg?auto=compress&cs=tinysrgb&h=226.525&fit=crop&w=253.17499999999998&dpr=2');
+}
+#panel5{
+    background-image: url('https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg?auto=compress&cs=tinysrgb&w=1200');
 }
