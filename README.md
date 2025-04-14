@@ -43,14 +43,14 @@ To run any of the projects locally:
 
    ```bash
    git clone https://github.com/Nawabi-Hamza/50-Project-HTML-CSS-Javascript.git
-   ``
+   ```
 
 
 . Navigate to the project directoy:
 
    ```bash
    cd 50-Project-HTML-CSS-Javascript/Project-01
-   ``
+   ```
 
 
 . Open `index.html` in your preferred web browser to view the projet.
