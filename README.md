@@ -72,4 +72,4 @@ Feel free to fork the repository, contribute, or use these projects as inspirati
 
 --- 
 
-Developer: HAMZA NAWANI
+## Developer: HAMZA NAWABI
