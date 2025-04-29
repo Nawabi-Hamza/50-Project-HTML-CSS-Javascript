@@ -9,19 +9,110 @@
     --line-border-empty: #e0e0e0;
     --primary-color:rgb(60, 231, 168);
 }
+hr{
+    margin: 20px 0;
+    border: none;
+    height: 1px;
+    background: white;
+}
+img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid white;
+    border-radius: 4px;
+}
 body{
-    background: teal;
-    color: white;
+    background: #333;
+    color: #222;
+    overflow-x: hidden;
+    margin:0;
 }
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    background: teal;
+    color: white;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
     /* text-align: center; */
-    > hr{
-        margin: 20px 0;
-        border: none;
-        height: 1px;
-        background: white;
-    }
+}
+.container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: .3s;
+}
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 30px;
+}
+nav ul li{
+    text-transform: uppercase;
+    color: white;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: transform .5s ease-in;
+}
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+nav ul li + li + li{
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+nav ul li i{
+    margin-right: 10px;
+}
+.container.show-nav{
+    transform: rotate(-20deg)
+}
+.circle-container{
+    position: fixed;
+    top: -90px;
+    left: -90px;
+    
+}
+.circle{
+    background-color: #12f9e3;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform .5s linear;
+}
+
+.circle button{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: white;
+}
+.circle button:focus{
+    outline: none;
+}
+.circle button#open{
+    left: 60%;
+}
+.circle button#close{
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.content{
+    max-width: 1000px;
+    margin: 50px auto;
 }
