@@ -1,6 +1,6 @@
 # 50 Projects – HTML, CSS & JavaScript
 
-Welcome to the **50 Projects** repository! This collection comprises 50 mini web development projects crafted using HTML, CSS, and JavaScript. Each project is designed to enhance your front-end development skills by focusing on various aspects of web design and interactivity.
+Welcome to the **50 Projects** repository! This collection comprises 50 mini web development projects crafted using HTML, CSS, and JavaScript. Each project is designed to enhance your front-end development skills by focusing on various aspects of web design and interactivity.
 
 ## 🚀 Projects Overview
 Each project is housed in its own directory within the repository These projects cover a wide range of functionalities and design patterns, including
@@ -32,8 +32,8 @@ The repository is organized as follow:
 │   └── script.js
 └── README.d 
 ```
-
-Each `Project-XX` folder contains all the necessary files for that specific projec.
+
+Each `Project-XX` folder contains all the necessary files for that specific project.
 
 ## 🛠️ Getting Started
 
@@ -71,3 +71,5 @@ This project is open-source and available under the [MIT License](LICESE).
 Feel free to fork the repository, contribute, or use these projects as inspiration for your own ork!
 
 --- 
+
+Developer: HAMZA NAWANI
