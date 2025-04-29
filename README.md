@@ -65,7 +65,7 @@ The primary goals of this project series re:
 ## 📄 Licese
 
 This project is open-source and available under the [MIT License](LICESE).
-
+0
 --
 
 Feel free to fork the repository, contribute, or use these projects as inspiration for your own ork!
