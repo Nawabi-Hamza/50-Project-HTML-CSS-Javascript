@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+:root{
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --hover-width: 75%;
+    --other-width: 25%;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: teal;
+    height: 100vh;
+    overflow-x: hidden;
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    z-index: 2;
+}
+.btn{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%);
+    text-decoration: none;
+    border: #fff solid .2rem;
+    color: white;
+    padding: .5rem;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+}
+.split{
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.split.left{
+    background: url('https://images.pexels.com/photos/13189272/pexels-photo-13189272.jpeg?auto=compress&cs=tinysrgb&w=1200') no-repeat center center/cover;
+    left: 0%;
+}
+.split.left:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--left-bg-color);
+    z-index: 1;
+}
+.split.right{
+    background: url('https://images.pexels.com/photos/10997627/pexels-photo-10997627.jpeg?auto=compress&cs=tinysrgb&w=1200') no-repeat center center/cover;
+    left: 50%;
+}
+.split.right:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--right-bg-color);
+    z-index: 1;
+}
+
+
+.hover-left .left{
+    width: var(--hover-width);
+}
+.hover-left .right{
+    width: var(--other-width);
+}
