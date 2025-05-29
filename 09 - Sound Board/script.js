@@ -1,12 +1,22 @@
 
 
-const labels = document.querySelectorAll('.form-control label');
+const sounds = ["applause", "beat", "gasp", "tada","victory", "wrong"];
 
-labels.forEach(label => {
-    label.innerHTML = label.innerText
-        .split('')
-        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms;">${letter}</span>`)
-        .join('');
+sounds.forEach((sound)=>{
+    const btn = document.createElement("button")
+    btn.innerText = sound
+    btn.classList.add("btn")
+    document.querySelector(".container").insertAdjacentElement("beforeend", btn)
+    btn.addEventListener("click", ()=>{
+        stopSongs()
+        document.getElementById(sound).play()
+    })
 })
 
-
+function stopSongs(){
+    sounds.forEach( sound => {
+        const song = document.getElementById(sound)
+        song.pause()
+        song.currentTime = 0;
+    })
+}
