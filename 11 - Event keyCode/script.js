@@ -1,7 +1,4 @@
 
-
-
-
 window.addEventListener("keypress",function(e){
     const key = document.getElementById("key")
     const keyCode = document.getElementById("keyCode")

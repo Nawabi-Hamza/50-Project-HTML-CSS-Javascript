@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+:root{
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --hover-width: 75%;
+    --other-width: 25%;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Muli', sans-serif;
+    background: teal;
+    color: white;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 40px;
+    border-radius: 5px;    
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+}
+.btn:focus{
+    outline: 0;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+
+.faq-container{
+    max-width: 98%;
+    margin: auto;
+}
+.faq-container .faq{
+    background: rgba(255, 255, 255, 0.52);
+    color: black;
+    margin-bottom: 10px;
+    padding: 1em;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    transition: .6s;
+}
+.faq-container .faq p{
+    display: none;
+}
+.faq-container .faq.active{
+    background: rgba(255, 255, 255, 0.22);
+    color: white
+}
+.faq-container .faq.active p{
+    display: block;
+}
+.faq-container .faq.active::before{
+    content: "📬";
+    font-size: 24px;
+}
+.faq-container .faq .faq-toggle{
+    position: absolute;
+    top: 25%;
+    right: 10px;
+    background: none;
+    border: none;
+    /* font-size: 20px; */
+    padding: 8px;
+}
+.faq-container .faq.active .faq-toggle{
+    color: white;
+    top: 10px;
+    right: 10px;
+}
+.faq-container .faq .faq-toggle:hover{
+    background: rgb(0,0,0,.4);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.faq-container .faq .faq-toggle .fa-times{
+    display: none;
+}
+.faq-container .faq .faq-toggle .fa-chevron-down{
+    display: block;
+}
+.faq-container .faq.active .faq-toggle .fa-times{
+    display: block;
+}
+.faq-container .faq.active .faq-toggle .fa-chevron-down{
+    display: none;
+}
