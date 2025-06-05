@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 :root{
     --left-bg-color: rgba(87, 84, 236, 0.7);
@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Muli', sans-serif;
+    font-family: 'Roboto Mono', sans-serif;
     background: teal;
     color: white;
     height: 100vh;
@@ -25,31 +25,18 @@ body{
 .container{
     background: rgba(0, 0, 0, 0.4);
     padding: 20px 40px;
-    border-radius: 5px;    
-}
-
-.container h1{
+    border-radius: 5px;   
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 30px;
+    gap: 2em;
 }
-.container a{
-    text-decoration: none;
-    color: lightblue;
+.counter{
+    font-size: 2rem;
+    font-family: 
 }
-.btn{
-    cursor: pointer;
-    display: inline-block;
-    width: 100%;
-    background: lightblue;
-    padding: 15px;
-    font-family: inherit;
-    font-size: 18px;
-    border: 0;
-    border-radius: 5px;
-}
-.btn:focus{
-    outline: 0;
-}
-.btn:active{
-    transform: scale(0.98);
+@media screen and (max-width:500px){
+    .container{
+        flex-direction: column;
+    }
 }
