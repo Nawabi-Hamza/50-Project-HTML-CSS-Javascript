@@ -60,3 +60,7 @@ body{
     height: 100px;
     width: 70px;
 }
+
+.cup.fill{
+    background: skyblue;
+}
